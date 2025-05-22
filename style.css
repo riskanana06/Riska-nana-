@@ -1,0 +1,86 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu menu"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 300px 1fr;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #4A4444;
+    border-radius: 15px;
+}
+
+.header {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background: linear-gradient(135deg, #007A74, #1C1C1C);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.header h1{
+    color: white;
+}
+
+.menu {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    grid-area: menu;
+    background-color: #2be390c9;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border-top: 10px inset ;
+    height: 650px;
+}
+
+.content {
+    grid-area: content;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background: linear-gradient(135deg, #007A74, #1C1C1C);
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.footer p{
+    color: #ffffff;
+}
+
+.menu .btn1 , .btn2, .btn3, .btn4 {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007A74;
+    color: white;
+    text-decoration: none; 
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.menu .btn1:hover, .btn2:hover , .btn2:hover, .btn4:hover{
+    background-color: #005f5f;
+}
